@@ -6,28 +6,39 @@ html, body {
 body {
   background-color: #2C5F2DFF;
   display:flex;
-  flex-flow:row wrap;
   justify-content:center;
-  margin:0;
-  height:100vh;
   align-items:center;
   align-content:center;
-  padding:0 8rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex-flow:row wrap;
+
 }
 
 h1 {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  /* margin-top: 0px;
+  margin-bottom: 10px; */
   font-family: sans-serif;
-  font-size: 6rem;
+  font-size: 7vw;
   background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+#wrapper {
+  flex-flow:row wrap;
+
+}
 button {
-    width: 220px;
-    height: 50px;
+  width: 17vw; 
+  height: 5vw;
+    flex-direction: row;
     border: none;
     outline: none;
     color: #fff;
@@ -88,14 +99,12 @@ button:after {
 
 
 .response {
-  display:flex;
+  display: inline;
   background-color: #FFE77AFF;
   padding:20px;
   border-radius:30px;
-  min-width:40px;
   max-width:220px;
-  min-height:40px;
-  margin:20px;
+  margin-left: 20px;
   position:relative;
   align-items:center;
   justify-content:center;
@@ -106,8 +115,8 @@ button:after {
   content:"";
   background-color: #FFE77AFF;
   border-radius:50%;
-  display:block;
-  position:absolute;
+  display: inline;
+  position: absolute;
   z-index:-1;
 }
 .response:before {
